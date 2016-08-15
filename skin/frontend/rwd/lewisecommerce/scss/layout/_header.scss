@@ -1,0 +1,255 @@
+/* ====================
+    HEADER STYLES 
+======================================== */
+
+#header {
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    z-index: 99;
+    max-width: 100%;
+    .page-header-container {
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    #header-nav {
+        clear: both;
+        .nav-primary a {
+            font-family: $AspectRegular;
+        }
+    }
+    .contact-icon {
+        width: 30px;
+        height: 30px;
+        line-height: 38px;
+        background-image: url(../images/telephone.png);
+        position: absolute;
+        top: 38px;
+    }
+    .contact-number {
+        padding-left: 35px;
+    }
+    .store-number {
+        width: 25%;
+    }
+    .store-logo {
+        width: 50%;
+    }
+    .skip-links {
+        width: 25%;
+    }
+    .store-number, .store-logo, .skip-links {
+        float: left;
+        line-height: 38px;
+        padding: 30px 0;
+        clear: none;
+        .logo {
+            float: none;
+            margin: 0 auto;
+            min-height: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 100%;
+            &:hover {
+                text-decoration: none;
+            }
+            h1 {
+                font-family: $AspectBold;
+                font-size: 30px;
+                line-height: 38px;
+                color: #000000;
+                margin: 0;
+            }
+        }
+    }
+    .skip-links {
+        .account-cart-wrapper {
+            position: inherit;
+            text-align: right;
+            height: 38px;
+            line-height: 38px;
+            .label {
+                display: none;
+            }
+            #header-search {
+                position: inherit;
+                float: right;
+                width: inherit;
+                height: 38px;
+                line-height: 38px;
+                .input-box {
+                    position: inherit;
+                    input {
+                        display: none;
+                        position: absolute;
+                        top: 77px;
+                        right: 0;
+                        max-width: 200px;
+                    }
+                    .search-button {
+                        position: relative;
+                        height: 38px;
+                        line-height: 38px;
+                        width: 30px;
+                    }
+                }
+            }
+            .header-minicart {
+                a {
+                    padding: 0;
+                    line-height: 38px;
+                    height: 38px;
+                    padding-right: 8px;
+                }
+            }
+            .skip-account {
+                padding: 0;
+                line-height: 38px;
+                height: 38px;
+                padding-right: 8px;
+            }
+            a {
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 38px;
+                    background-size: inherit;
+                    background-position: inherit;
+                    background-repeat: none;
+                }
+                &.skip-account {
+                    .icon {
+                        background-image: url(../images/account-icon.png);
+                        &:hover {
+                            background-image: url(../images/account-icon.png);
+                        }
+                    }
+                }
+                &.skip-cart {
+                    .icon {
+                        background-image: url(../images/basket-icon.png);
+                        &:hover {
+                            background-image: url(../images/basket-icon.png);
+                        }
+                    }
+                }
+            }
+            #search_mini_form .search-button:before {
+                width: 30px;
+                height: 30px;
+                line-height: 38px;
+                background-size: inherit;
+                background-position: inherit;
+                background-image: url(../images/search-icon.png);
+                background-repeat: none;
+                &:hover {
+                    background-image: url(../images/search-icon.png);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 960px) {
+    #header {
+        .store-logo { 
+            .logo { 
+                h1 {
+                   font-size: 28px; 
+                }
+            }    
+        }
+    }
+    .nav-primary a.level0 {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    #header {
+        .skip-content.skip-active {
+            background: none;
+        }
+        .store-number {
+            display: none;
+        }
+        .store-logo {
+            width: 100%;
+            padding: 30px 0 0 0;
+        }
+        .skip-links {
+            border: 0;
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+            width: 100%;
+            .skip-link {
+                border: 0;
+                &.skip-active {
+                    background: none;
+                }
+            }
+           .skip-nav  {
+                float: left;
+                width: 8.3333%;
+            }
+            .account-cart-wrapper {
+                float: right;
+                width: 134px;
+                #header-search {
+                    padding: 0;
+                    float: left;
+                    width: 38px;
+                    height: 30px;
+                    .input-box {
+                        input {
+                            top: 128px;
+                            right: 30px;
+                        }
+                    }
+                }
+                .skip-account {
+                    padding: 0;
+                    width: 48px;
+                    height: 38px;
+                    padding-right: 5px;
+                }
+                .header-minicart {
+                    a {
+                        padding: 0;
+                        width: 48px;
+                        height: 38px;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+        #header-nav {
+            padding: 0;
+        }
+    }
+    #header-account li:last-child a, .nav-primary li.level0:last-child a.level0 {
+        border-bottom: 1px solid #cccccc;
+    }
+}
+
+
+@media only screen and (max-width: 410px) {
+    
+    #header {
+        .store-logo .logo h1 {
+            font-size: 28px;
+        }
+        .skip-links {
+            .account-cart-wrapper {
+                #header-search {
+                    .input-box {
+                        input {
+                            top: 169px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

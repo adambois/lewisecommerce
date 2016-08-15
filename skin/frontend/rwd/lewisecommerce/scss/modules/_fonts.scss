@@ -1,0 +1,84 @@
+// Aspect
+@font-face {
+    font-family: 'Aspect';
+    src: url('../fonts/webfonts/AspW-Lt/aspw-lt.eot');
+    src: url('../fonts/webfonts/AspW-Lt/aspw-lt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/AspW-Lt/aspw-lt.woff2') format('woff2'),
+         url('../fonts/webfonts/AspW-Lt/aspw-lt.woff') format('woff'),
+         url('../fonts/webfonts/AspW-Lt/aspw-lt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aspect';
+    src: url('../fonts/webfonts/AspW-Rg/aspw-rg.eot');
+    src: url('../fonts/webfonts/AspW-Rg/aspw-rg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/AspW-Rg/aspw-rg.woff2') format('woff2'),
+         url('../fonts/webfonts/AspW-Rg/aspw-rg.woff') format('woff'),
+         url('../fonts/webfonts/AspW-Rg/aspw-rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aspect';
+    src: url('../fonts/webfonts/AspWb-Bd/aspw-bd.eot');
+    src: url('../fonts/webfonts/AspW-Bd/aspw-bd.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/AspW-Bd/aspw-bd.woff2') format('woff2'),
+         url('../fonts/webfonts/AspW-Bd/aspw-bd.woff') format('woff'),
+         url('../fonts/webfonts/AspW-Bd/aspw-bd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AspectBold';
+    src: url('../fonts/webfonts/AspW-XBd/aspw-xbd.eot');
+    src: url('../fonts/webfonts/AspW-XBd/aspw-xbd.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/AspW-XBd/aspw-xbd.woff2') format('woff2'),
+         url('../fonts/webfonts/AspW-XBd/aspw-xbd.woff') format('woff'),
+         url('../fonts/webfonts/AspW-XBd/aspw-xbd.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+// Beaufort / Proxima
+@font-face {
+    font-family: 'BeaufortItalic';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/webfonts/24C20A_0_0.eot');
+    src: url('../fonts/webfonts/24C20A_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/webfonts/24C20A_0_0.woff') format('woff'), url('../fonts/webfonts/24C20A_0_0.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Beaufort';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/webfonts/24C20A_1_0.eot');
+    src: url('../fonts/webfonts/24C20A_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/webfonts/24C20A_1_0.woff') format('woff'), url('../fonts/webfonts/24C20A_1_0.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'ProximaNovaT-Thin';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/webfonts/24C20A_2_0.eot');
+    src: url('../fonts/webfonts/24C20A_2_0.eot?#iefix') format('embedded-opentype'), url('../fonts/webfonts/24C20A_2_0.woff') format('woff'), url('../fonts/webfonts/24C20A_2_0.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/webfonts/24C20A_3_0.eot');
+    src: url('../fonts/webfonts/24C20A_3_0.eot?#iefix') format('embedded-opentype'), url('../fonts/webfonts/24C20A_3_0.woff') format('woff'), url('../fonts/webfonts/24C20A_3_0.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'ProximaNova-Semibold';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/webfonts/24C20A_4_0.eot');
+    src: url('../fonts/webfonts/24C20A_4_0.eot?#iefix') format('embedded-opentype'), url('../fonts/webfonts/24C20A_4_0.woff') format('woff'), url('../fonts/webfonts/24C20A_4_0.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'ProximaNova-Light';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/webfonts/24C20A_5_0.eot');
+    src: url('../fonts/webfonts/24C20A_5_0.eot?#iefix') format('embedded-opentype'), url('../fonts/webfonts/24C20A_5_0.woff') format('woff'), url('../fonts/webfonts/24C20A_5_0.ttf') format('truetype')
+}

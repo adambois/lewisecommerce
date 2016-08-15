@@ -1,0 +1,496 @@
+/* ====================
+    BASE STYLES 
+======================================== */
+
+body, button, input, select, table, textarea, label, .toolbar, .pager {
+    font-family: $ProximaNovaT-Light;
+    color: #000;
+}
+
+.block-title h2, .block-title h3, .block-title strong {
+    font-family: $ProximaNovaT-Semibold;
+    color: #000;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #000000;
+    font-size: 12px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #000000;
+    font-size: 12px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #000000;
+    font-size: 12px;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #000000;
+    font-size: 12px;
+}
+
+#header:after, .col-main:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.main-container {
+    padding: 30px;
+    padding-top: 162px;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+    text-align: center;
+    li {
+        float: none;
+        display: inline-block;
+        text-transform: none;
+        font-family: $ProximaNovaT-Semibold;
+        font-size: 12px;
+        a {
+            float: none;
+        }
+        span {
+            float: none;
+            padding: 0;
+        }
+        strong {
+            color: #000000;
+        }
+    }
+}
+
+.col-main {
+    
+    .page-title {
+        text-align: center;
+        h1 {
+            font-size: 55px;
+            font-family: $AspectBold;
+            color: #000000;
+            letter-spacing: 15px;
+        }
+    }
+    
+    .secondary-title {
+        position: absolute;
+        top: 102px;
+        left: 50%;
+        text-align: center;
+        margin-left: -21px;
+        text-transform: uppercase;
+        font-family: "AspectBold";
+        letter-spacing: 4px;
+        width: 33px;
+    }
+    
+    /* Product List */
+    
+    .category-products {
+
+        .products-grid {
+            width: 80%;
+            margin-left: 20%;
+        }
+
+        .toolbar {
+            background: none;
+            margin-top: 0;
+            border-top: 4px solid #cccccc;
+            letter-spacing: 2px;
+            font-size: 12px;
+            padding-bottom: 12px;
+            padding-top: 13px;
+            line-height: 26px;
+            .block-layered-nav {
+                float: left;
+                width: 20%;
+                margin: 0;
+                padding-right: 30px;
+                position: relative;
+                .block-title {
+                    margin: 0;
+                    strong {
+                        line-height: 26px;
+                        font-size: 12px;
+                        span {
+                            border-bottom: 3px solid #000000;
+                            padding-bottom: 16px;
+                        }
+                    }
+                }
+                .block-content {
+                    display: none;
+                    position: absolute;
+                    width: 100%;
+                    top: 57px;
+                    left: -10px;
+                }
+                .reveal-button {
+                    position: relative;
+                    overflow: hidden;
+                    margin: 0;
+                    padding: 0;
+                    width: 30px;
+                    height: 21px;
+                    font-size: 0;
+                    text-indent: -9999px;
+                    appearance: none;
+                    box-shadow: none;
+                    border-radius: none;
+                    border: none;
+                    cursor: pointer;
+                    transition: background 0.3s;
+                    background: none;
+                    float: right;
+                    &:focus {
+                      outline: none;
+                    }
+                    span {
+                        display: block;
+                        position: absolute;
+                        top: 12px;
+                        left: 8px;
+                        right: 0px;
+                        height: 2px;
+                        background: #000000;
+                        transition: background 0s 0.3s;
+                        width: 12px;
+                        &:before, &:after {
+                            position: absolute;
+                            display: block;
+                            left: 0;
+                            width: 12px;
+                            height: 2px;
+                            background-color: #000000;
+                            content: "";
+                            transition-duration: 0.3s, 0.3s;
+                            transition-delay: 0.3s, 0s;
+                        }
+                        &:before {
+                            top: 0;
+                            transition-property: top, transform;
+                        }
+                        &:after {
+                            bottom: -0;
+                            transition-property: bottom, transform;
+                            transform: rotate(90deg);
+                        }
+                    }
+                    &.is-active {
+                        span {
+                            background: none;
+                            &:before {
+                                top: 0;
+                                transform: rotate(45deg);
+                            }
+                            &:after {
+                                bottom: 0;
+                                transform: rotate(-45deg);
+                            }
+                            &:before, &:after {
+                                transition-delay: 0s, 0.3s;
+                            }
+                        }
+                    }
+                }
+                #narrow-by-list {
+                    dt {
+                        background: none;
+                        font-family: $ProximaNovaT-Regular;
+                        color: #000;
+                        border-top: 0;
+                        border-left: 0;
+                        border-right: 0;
+                        font-size: 12px;
+                        padding: 13px 10px 13px 10px;
+                        i {
+                            float: right;
+                            font-size: 15px;
+                            line-height: 15px;
+                        }
+                    }
+                    dd {
+                        display: none;
+                        border: 0;
+                    }
+                }
+            }
+            .sorter {
+                float: left;
+                width: 20%;
+                text-align: center;
+                margin: 0;
+                label {
+                    font-size: 12px;
+                }
+                .limiter-button {
+                    float:left;
+                    position: relative;
+                    .dropdown-toggle {
+                        color: #000;
+                    }
+                    span {
+                        text-transform: uppercase;
+                        .limiter-toggle {
+                            font-family: $ProximaNovaT-Semibold;
+                            cursor: pointer;
+                        }
+                    }
+                    .dropdown-menu {
+                        position: absolute;
+                        width: 50px;
+                        background: #ffffff;
+                        border: 1px solid #cccccc;
+                        z-index: 9;
+                        text-align: center;
+                        display: none;
+                        li {
+                            border-bottom: 1px solid #cccccc;
+                            color: #000000;
+                            a {
+                                display: block;
+                                color: #000000;
+                                &:hover {
+                                    text-decoration: none;
+                                    color: #000000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sort-by {
+                float: right;
+                width: 20%;
+                text-align: right;
+                line-height: 26px;
+                i {
+                    float: right;
+                    padding: 0 15px;
+                    line-height: 26px;
+                    font-size: 15px;
+                }
+                .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    background: #e6e6e6;
+                    left: 0;
+                    width: 100%;
+                    li {
+                        border-top: 1px solid #cccccc;
+                        text-align: right;
+                    }
+                }
+                .btn-group {
+                    width: 70%;
+                    margin-left: 30%;
+                    text-align: left;
+                    padding-left: 15px;
+                    background: #e6e6e6;
+                    color: #000000;
+                    margin-right: 0;
+                    text-transform: uppercase;
+                    position: relative;
+                    cursor: pointer;
+                    z-index: 9;
+                    a {
+                        color: #000000;
+                        cursor: pointer;
+                        display: block;
+                        padding-right: 15px;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .amount {
+                float: left;
+                width: 20%;
+                text-align: left;
+                text-transform: uppercase;
+                line-height: 13px;
+                text-align: center;
+                .total-items {
+                    float: left;
+                    strong {
+                        font-family: $ProximaNovaT-Semibold;
+                        font-size: 12px;
+                        line-height: 11px;
+                    }
+                    span {
+                        display: block;
+                        font-weight: normal;
+                    }
+                }
+            }
+            .pager {
+                width: 20%;
+                text-align: center;
+                line-height: 26px;
+                .pages {
+                    width: 100%;
+                    height: 21px;
+                    margin-bottom: 0;
+                    label {
+                        font-size: 12px;
+                    }
+                    ol {
+                        display: inline-block;
+                        li {
+                            float: none;
+                            display: inline-block;
+                            width: 20px;
+                            a {
+                                color: #000000;
+                                width: 20px;
+                                font-size: 12px;
+                                vertical-align: baseline;
+                                font-family: $ProximaNovaT-Light;
+                                line-height: 26px;
+                                height: 21px;
+                            }
+                            &.current {
+                                border: 0;
+                                background: none;
+                                width: 20px;
+                                font-size: 12px;
+                                vertical-align: baseline;
+                                font-family: $ProximaNovaT-Semibold;
+                                color: #000000;
+                                line-height: 26px;
+                                height: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .toolbar-bottom {
+            .toolbar {
+                text-align: center;
+                border: 0;
+                font-size: 12px;
+                .pager {
+                    width: 100%;
+                }
+            }
+        }
+        .product-image {
+            border: 0;
+        }
+        .product-info {
+            .actions {
+                display: none;
+            }
+        }
+        .product-name {
+            font-size: 12px;
+            font-family: $ProximaNovaT-Semibold;
+        }
+        .collection-name {
+            font-size: 10px;
+            font-family: $ProximaNovaT-Light;
+            color: #000000;
+        }
+        .price-box {
+            .price {
+                font-size: 12px;
+                font-family: $ProximaNovaT-Light;
+                color: #000000;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .main-container {
+        padding: 30px;
+        padding-top: 172px;
+        .col-main {
+            .category-products {
+                .products-grid {
+                    width: 100%;
+                    margin-left: 0;
+                }
+                .toolbar {
+                    .block-layered-nav--no-filters {
+                        width: 100%;
+                        padding-bottom: 30px;
+                        .block-title {
+                            display: block;
+                        }
+                    }
+                    .block-layered-nav {
+                        padding-right: 0;
+                        .block-content {
+                            position: relative;
+                            top: inherit;
+                            left: inherit;
+                            margin-top: 12px;
+                            dl {
+                                dt {
+                                    border-bottom: 1px solid #cccccc;
+                                    &:after {
+                                        display: none;
+                                    }
+                                    &.last {
+                                        border: 0;
+                                    }
+                                }
+                            }
+                        }
+                        #narrow-by-list {
+                            padding: 0;
+                            border-top: 1px solid #cccccc;
+                            dt {
+                                padding: 13px 15px;
+                            }
+                        }
+                    }
+                    .amount, .sorter, .sort-by {
+                        width: 33.333333%;
+                    }
+                    .sorter {
+                        .limiter {
+                            width: 152px;
+                            margin: 0 auto;
+                            overflow: auto;
+                        }
+                    }
+                    .pager {
+                        display: none;
+                    }
+                }
+                .toolbar-bottom {
+                    .pager {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .col-main {
+        .category-products {
+            .toolbar {
+                padding: 10px;
+                padding-bottom: 0;
+                .amount, .sorter, .sort-by {
+                    display: none;
+                }
+            }
+            .products-grid { 
+                .product-info {
+                    padding-bottom: 60px;
+                }
+            }
+        }
+    }
+}
